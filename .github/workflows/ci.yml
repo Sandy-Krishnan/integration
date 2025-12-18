@@ -2,9 +2,12 @@ name : Spring Boot CI
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - pipeline-test
 
 jobs:
+  #BUILD JOB
   build:
     runs-on: ubuntu-latest
 
